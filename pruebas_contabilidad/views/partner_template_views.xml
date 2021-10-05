@@ -3,7 +3,7 @@
 
     <record id="partner_template_view_form" model="ir.ui.view">
         <field name="name">partner_template.view.form</field>
-        <field name="model">res.partner_inherit</field>
+        <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
             <field name="phone" position="before">
