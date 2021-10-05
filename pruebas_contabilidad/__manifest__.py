@@ -11,7 +11,7 @@
     'category':'Training',
     'version':'0.1',
     'depends':[
-        'accounting'
+        'account_accountant'
     ],
     'data':[
         'views/partner_template.xml'
