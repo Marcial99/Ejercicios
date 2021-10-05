@@ -4,7 +4,7 @@
     <record id="partner_template_view_form" model="ir.ui.view">
         <field name="name">partner_template.view.form</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="res.partner.select"/>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
             <field name="vat" position="before">
                 <field name="nuevo" />
