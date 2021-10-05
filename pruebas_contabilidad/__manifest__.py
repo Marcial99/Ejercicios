@@ -14,7 +14,7 @@
         'account_accountant'
     ],
     'data':[
-        'views/partner_template.xml'
+        'views/partner_template_views.xml'
     ],
     'demo':[]
 }
