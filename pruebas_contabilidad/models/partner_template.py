@@ -9,9 +9,9 @@ class PartnerTemplate(models.Model):
     nuevo = fields.Text(string='Nuevo campo')
 
 
+   
     @api.model
     def create(self, vals):
-        for record in self:
-            if not(record.nuevo):
-               raise UserError('El campo Nuevo es obligatorio') 
+        if not(this.nuevo):
+            raise UserError('El campo Nuevo es obligatorio') 
         return super().create(vals)
