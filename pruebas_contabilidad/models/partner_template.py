@@ -6,7 +6,14 @@ class PartnerTemplate(models.Model):
     _inherit = 'res.partner'
 
 
-    nuevo = fields.Text(string='Nuevo campo')
+    phone_email = fields.Boolean(compute='_compute_phone_email', string='Verificado')
+    
+    @api.depends('phone','email')
+    def _compute_phone_email(self):
+        if (self.phone and self.email):
+            self.phone_email=True
+        else:
+            self.phone_email=False
 
 
     @api.constrains('phone')
