@@ -11,7 +11,7 @@
         <field name="arch" type="xml">
             
             <xpath expr="//field[@name='name']" position="after">
-                <field name="nuevo" />
+                <field name="phone_email" readonly="1"/>
             </xpath>
             
 
