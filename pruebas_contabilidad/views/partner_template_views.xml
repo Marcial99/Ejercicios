@@ -10,7 +10,7 @@
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
             
-            <xpath expr="//field[@name='phone']" position="after">
+            <xpath expr="//field[@name='name']" position="after">
                 <field name="nuevo" />
             </xpath>
             
