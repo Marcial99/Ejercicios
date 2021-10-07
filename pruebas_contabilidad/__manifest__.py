@@ -11,10 +11,12 @@
     'category':'Training',
     'version':'0.1',
     'depends':[
-        'account_accountant'
+        'account_accountant',
+        'crm'
     ],
     'data':[
-        'views/partner_template_views.xml'
+        'views/partner_template_views.xml',
+        'views/crm_lead_inherit_views.xml'
     ],
     'demo':[]
 }
