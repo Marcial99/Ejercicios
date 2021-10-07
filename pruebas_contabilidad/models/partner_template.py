@@ -12,7 +12,8 @@ class PartnerTemplate(models.Model):
    
     @api.model
     def create(self, vals):
-        for record in self:
-            if not(record.nuevo):
-                raise UserError('El campo Nuevo es obligatorio') 
+        if not(self.phone):
+            raise UserError('El numero de teléfono es obligatorio')
+        if not(self.email):
+            raise UserError('El correo electrónico es obligatorio')
         return super().create(vals)
