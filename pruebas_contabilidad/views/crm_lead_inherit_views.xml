@@ -9,8 +9,8 @@
             <field name="inherit_id" ref="crm.crm_lead_view_form"/>
             <field name="arch" type="xml">
             
-            <xpath expr="//field[@name='phone']" position="after">
-                <field name="birthday" />
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="birthday" string='Cumpleaños'/>
             </xpath>
             </field>
         </record>
