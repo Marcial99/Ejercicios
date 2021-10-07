@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+<data>
 
-    <record id="partner_template_view_form" model="ir.ui.view">
+    
+
+
+    <record id="base.view_res_partner_filter" model="ir.ui.view">
         <field name="name">partner_template.view.form</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
@@ -15,4 +19,5 @@
         </field>
     </record>
 
+</data>
 </odoo>
