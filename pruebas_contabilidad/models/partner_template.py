@@ -11,5 +11,5 @@ class PartnerTemplate(models.Model):
 
     @api.constrains('nuevo')
     def _constrains_nuevo(self):
-        if len(self.nuevo)<1:
+        if not(self.nuevo):
             raise UserError('El campo es obligatorio')
