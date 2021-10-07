@@ -9,7 +9,12 @@ class PartnerTemplate(models.Model):
     nuevo = fields.Text(string='Nuevo campo')
 
 
-    @api.constrains('nuevo')
-    def _constrains_nuevo(self):
-        if not(self.nuevo):
-            raise UserError('El campo es obligatorio')
+    @api.constrains('phone')
+    def _constrains_phone(self):
+        if not(self.phone):
+            raise UserError('El telefono es obligatorio') 
+
+    @api.constrains('email')
+    def _constrains_email(self):
+        if not(self.email):
+            raise UserError('El correo electrónico es obligatorio')          
